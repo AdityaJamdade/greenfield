@@ -36,9 +36,6 @@ namespace CSharpFeatureApp
 
 
 /*
-
-
-
             // compile time, early binding, static linking
 
             Handler.PayProfessionalTax();

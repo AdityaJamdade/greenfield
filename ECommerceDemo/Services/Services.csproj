@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{99D25941-4298-4919-AF96-CF71DC5B5C56}</ProjectGuid>
+    <ProjectGuid>{603FEED1-352D-4755-81B8-D23015E3EC02}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Catalog</RootNamespace>
-    <AssemblyName>Catalog</AssemblyName>
+    <RootNamespace>Services</RootNamespace>
+    <AssemblyName>Services</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -41,14 +41,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class1.cs" />
     <Compile Include="IProductService.cs" />
     <Compile Include="ProductService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BinaryDataRepository\BinaryDataRepository.csproj">
+      <Project>{2534bf9a-d9a4-4cc5-90cf-ed398e203ab2}</Project>
+      <Name>BinaryDataRepository</Name>
+    </ProjectReference>
     <ProjectReference Include="..\POCOLib\POCOLib.csproj">
       <Project>{143afc77-a8b7-4a2f-9658-daa988e9f3f0}</Project>
       <Name>POCOLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Specification\Specification.csproj">
+      <Project>{2f94b7ed-6a6a-48d5-8349-34794e92a10a}</Project>
+      <Name>Specification</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

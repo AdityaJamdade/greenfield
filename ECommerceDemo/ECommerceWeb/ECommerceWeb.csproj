@@ -247,6 +247,18 @@
       <Project>{22ded84a-5091-4510-b4b1-0db578a500e0}</Project>
       <Name>OrderProcessing</Name>
     </ProjectReference>
+    <ProjectReference Include="..\POCOLib\POCOLib.csproj">
+      <Project>{143afc77-a8b7-4a2f-9658-daa988e9f3f0}</Project>
+      <Name>POCOLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Services\Services.csproj">
+      <Project>{603feed1-352d-4755-81b8-d23015e3ec02}</Project>
+      <Name>Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Specification\Specification.csproj">
+      <Project>{2f94b7ed-6a6a-48d5-8349-34794e92a10a}</Project>
+      <Name>Specification</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
